@@ -25,7 +25,8 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         check?.setOnClickListener{
-            if (name?.text?.trim().isNullOrBlank()){
+            if (name?.text?.trim().isNullOrEmpty()){
+
                 name?.error = "enter the name"
             }
             else{
